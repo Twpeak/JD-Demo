@@ -1,0 +1,1014 @@
+/*主体main部分*/
+.main{
+    position: relative;
+    z-index: 101;
+    margin-bottom: 30px;
+    background: #f4f4f4;
+}
+.main_margin_top{
+    margin-top:10px ;
+}
+.wing{
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    background: url("../images/wing.webp") no-repeat 50% 0;
+    height: 480px;
+}
+.main_box{
+    position: relative;
+    height: 480px;
+    width: 1190px;
+    margin: 0 auto;
+    background: #f4f4f4;
+}
+.main_left{
+    float: left;
+    height: 480px;
+    width: 190px;
+    margin-right: 10px;
+}
+.main_left ul{
+    width:100% ;
+    height: 450px;
+    padding: 10px 0;
+    background: #fefefe;
+    color: #636363;
+    margin-top:10px ;
+}
+.main_left ul li{
+    height:25px ;
+    line-height: 25px;
+    padding-left: 18px;
+    /*重要：font-size:0消除了行内块元素（a，span）特有的空白间隙*/
+    font-size: 0;
+    transition: background-color 0.2s ease;
+}
+.main_left ul li:hover{
+    background-color: rgb(217,217,217);
+}
+.main_left ul li a{
+    color: #333333;
+    font-size: 14px;
+    /*重要：ease设置颜色是看起来最舒服的*/
+    transition: color 0.2s ease;
+}
+.main_left ul li a:hover{
+    color: #e1251b;
+}
+.main_left ul li span{
+    padding:  0 2px;
+    font-size: 12px;
+}
+.main_article{
+    margin-right: 10px;
+    width: 790px;
+    height: 480px;
+    float: left;
+}
+/*子绝父相，有时候盒子在大盒子里不好使用定位，以免飞出标准流，这时，用这个盒子定好位，再里面套一层
+盒子，使用相对定位，这样，里面的元素盒子都是这个盒子为参照对象*/
+.main_article{
+    position: relative;
+    height: 470px;
+    margin-top: 10px;
+    /*background-color:#e1251b;*/
+}
+.main_article_left{
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 470px;
+    width: 590px;
+    margin-right: 10px;
+}
+.main_article_left a{
+    float: left;
+    display: block;
+    width: 100%;
+    height: 100%;
+   /* background: url("../upload/main.webp") no-repeat 0 0;
+    background-size: cover;*/
+}
+.main_article_left_image1{
+    background: url("../upload/main.webp") no-repeat 0 0;
+    background-size: cover;
+}
+.main_article_button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 35px;
+    width: 25px;
+    line-height: 34px;
+    font-size: 20px;
+    color: rgb(221,227,238);
+    background: rgba(0,0,0,.15);
+    /*box-sizing: border-box;*/
+    transition: all 0.2s ease;
+}
+.main_article_right_button{
+    display: none;
+    transition: all .2s ease;
+}
+.main_article_left_button1{
+    left: 0;
+    padding-right: 6px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.main_article_left_button2{
+    right: 0;
+    padding-left: 6px;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+}
+.main_article_right_button1{
+    padding-right: 6px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.main_article_right_button2{
+    right: 0;
+    padding-left: 6px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.main_article_button:hover{
+    background-color: rgba(0,0,0,.5);
+}
+.main_article_right{
+    width: 190px;
+    float: left;
+    height: 470px;
+}
+.main_article_right a{
+    display: block;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all .2s ease;
+    background-size: cover;
+}
+.main_article_right_one{
+    background: url("../upload/main_right1.webp") no-repeat;
+}
+.main_article_right_two{
+    background: url("../upload/main_right2.webp") no-repeat;
+}
+.main_article_right_three{
+    background: url("../upload/main_right13.webp") no-repeat;
+}
+.main_article_right:hover .main_article_right_button{
+    display: block;
+}
+.main_article_right a:hover{
+    opacity: 0.8;
+}
+
+.main_right{
+    position: relative;
+    width: 190px;
+    height: 480px;
+    float: right;
+
+}
+.main_right_one{
+    margin-top: 10px;
+    height: 102px;
+    background: #ffffff;
+}
+.main_right_two{
+    position: relative;
+    height: 130px;
+    background: #ffffff;
+}
+.main_right_three{
+    position: relative;
+    height: 238px;
+    transition: all .2s ease;
+    background: #ffffff;
+}
+.main_right_one_box{
+    position: relative;
+    padding-top: 67px;
+    height: 35px;
+}
+.main_right_one_image{
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 13px;
+    background: url("../images/touxiang.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.main_right_one_text{
+    position: absolute;
+    top: 16px;
+    left: 74px;
+    right: 10px;
+}
+.main_right_one_button_box{
+    height: 25px;
+    text-align: center;
+}
+.main_right_one_button{
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 13px;
+    transition: all 0.3s ease;
+}
+.main_right_one_button_one{
+    background-color: #e1251b;
+    color:#ffffff ;
+}
+.main_right_one_button_one:hover{
+    background-color:#c81623;
+    color: #ffffff;
+}
+.main_right_one_button_two:hover{
+    background-color:#c81623;
+    color: #ffffff;
+}
+.main_right_one_button_two{
+    background-color: #363634;
+    color: #e5d790;
+}
+.main_right_one_box::after,.main_right_two::after{
+    position: absolute;
+    height: 1px;
+    /* 问题：同时加left和right，不理解，但是非加不可，否则不显示*/
+    /*用left和right设置了宽度*/
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    content: "";
+    background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
+}
+.main_right_two_header{
+    height: 20px;
+    padding-top:10px ;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.main_right_two h5{
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    margin-left: 15px;
+    color: #333;
+}
+.main_right_two_header>a{
+    display: inline-block;
+    float: right;
+    width: 35px;
+    margin-right: 15px ;
+    color: #999999 ;
+}
+.main_right_two_header>a:hover{
+    color: #c81623;
+}
+.main_right_two ul{
+    position: relative;
+    margin: 0 15px;
+    height: 88px;
+}
+.main_right_two li{
+    overflow: hidden;
+    max-width: 160px;
+    height: 16px;
+    text-overflow: ellipsis;
+    line-height: 16px;
+    white-space: nowrap;
+    color: #999;
+    margin-bottom: 6px;
+}
+.main_right_two li span{
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    height: 16px;
+    width: 35px;
+    background-color: rgba(225,37,27,.08);
+    color: #e1251b;
+    margin-right: 6px;
+}
+.main_right_three_box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.main_right_three_box ul li{
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 55px;
+    background: #fff;
+    text-align: center;
+}
+.main_right_three_box ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: color 0.2s ease;
+}
+.main_right_three_box ul li a i{
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+}
+.main_right_three_box ul li a div{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 2px solid #fff;
+    color: #333;
+    transition: color .15s ease;
+}
+.main_right_three_box ul li a img{
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+.main_right_three_image{
+
+}
+.main_right_three_image_red{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.main_right_three_box ul li a:hover,.main_right_three_box ul li a:hover .main_right_three_image_red{
+    color: #e1251b;
+    opacity: 1;
+}
+/*秒杀部分*/
+.ms{
+    position: relative;
+    height: 260px;
+    width: 1190px;
+    margin: 0 auto 20px;
+    /*background: #ffffff;*/
+}
+.ms>a{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 190px;
+    height: 100%;
+    background: url("../images/tick.png") no-repeat;
+    background-size: contain;
+    color: #ffffff;
+}
+.ms_list{
+    position: relative;
+    float: left;
+    width: 800px;
+    height: 100%;
+    background: rgb(255,255,255);
+}
+
+.ms_a_text{
+    width: 100%;
+    font-size: 30px;
+    margin-top: 31px;
+    text-align: center;
+    font-weight: 700;
+}
+.ms_time{
+    width: 100%;
+    margin-top: 90px;
+    text-align: center;
+    font-size: 14px;
+}
+.ms_time strong{
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+.ms_countdown{
+    width: 130px;
+    height: 30px;
+    margin:  10px 30px  0 30px;
+    background: black;
+    font-size: 20px;
+}
+.ms_countdown div{
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+}
+.ms_countdown div:nth-child(odd){
+    font-size: 20px;
+    width:30px;
+    background:black;
+}
+.ms_countdown div:nth-child(even){
+    width:20px;
+    font-size: 18px;
+    background:rgb(225,37,27);
+}
+.ms_list>a{
+    display: block;
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+
+.ms_image_box{
+    width: 140px;
+    height: 140px;
+    margin: 30px auto  0;
+/*问题：把background-size:这个属性放在这里，则不生效*/
+}
+.ms_image_hidden{
+    width: 100%;
+    height: 100%;
+    background: #eeeeee;
+    opacity: 0;
+    transition: all .2s ease;
+}
+.ms_list>a:hover .ms_image_hidden{
+    opacity: 0.2;
+}
+.ms_image_box_one{
+    background: url("../upload/ms_list_one.webp") no-repeat;
+    background-size:cover;
+}
+.ms_image_box_two{
+    background: url("../upload/ms_list_two.webp") no-repeat;
+    background-size:cover;
+}
+.ms_image_box_three{
+    background: url("../upload/ms_list_three.webp") no-repeat;
+    background-size:cover;
+}
+.ms_image_box_four{
+    background: url("../upload/ms_list_four.webp") no-repeat;
+    background-size:cover;
+}
+.ms_list_text{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    width: 160px;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ms_list_price{
+    width: 160px;
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    margin: 7px auto 0;
+    border: #e1251b 1px solid;
+    /*重要：如果出现子盒子不能完全覆盖父盒子，边框粗细不一时，使用border-box*/
+    box-sizing: border-box;
+    background:#e1251b;
+    font-size: 0;
+}
+.ms_list_price_red{
+    width: 92px;
+    height: 100%;
+    text-align: center;
+    line-height: 22px;
+    float: left;
+    color: white;
+}
+.ms_list_price_white{
+    width: 66px;
+    height: 100%;
+    float: right;
+    line-height: 22px;
+    background: white;
+}
+.ms_list_price_red span:nth-child(1){
+    font-size: 12px;
+    font-weight: 400;
+}
+.ms_list_price_red span:nth-child(2){
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+}
+.ms_list_price_white span{
+    float: right;
+    height: 100%;
+    width: 66px;
+    font-size: 12px;
+    text-align: center;
+    color: #999999;
+    text-decoration: line-through;
+}
+.ms_list_price_triangle{
+    position: absolute;
+    width:0;
+    height: 0;
+    border-color: transparent white transparent transparent;
+    border-style: solid;
+    border-width: 22px 8px 0 0;
+    top: 0;
+    left: 84px;
+}
+.ms_list>a::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(180deg,white,#eeeeee,white);
+}
+.ms_roll{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 260px;
+    padding: 10px;
+    background: white;
+    box-sizing: border-box;
+}
+.ms_roll_box{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,white 50%,rgb(238,240,246) 90% );
+}
+.ms_roll_image{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../upload/xie.webp") no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+}
+.ms_roll_image:hover .ms_image_hidden{
+    opacity: 0.2;
+}
+.ms_roll_text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    height: 90px;
+    width: 180px;
+}
+.ms_roll_text_button{
+    display: inline-block;
+    width: 82px;
+    height: 24px;
+    text-align: center;
+    margin-top: 4px;
+    border-radius: 14px;
+    color: #e1251b;
+    line-height: 22px;
+    font-weight: 700;
+    padding-left: 4px;
+    font-size: 12px;
+    border: 1px solid #e1251b;
+    box-sizing: border-box;
+    transition: background-color .2s ease;
+}
+.ms_roll_text_button:hover{
+    background:#e1251b ;
+    color: #eeeeee;
+}
+.ms_roll_dot_box{
+      position: absolute;
+      bottom: 4px;
+    font-size: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ms_roll_dot_box i{
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: red;
+    margin-right: 4px;
+}
+.fix_body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*父盒子遮住子盒子，可以用以下代码
+    父盒子pointer-	events：none；//取消父盒子点击事件
+    父盒子里包含的子盒子：pointer-events：auto；//让子盒子恢复点击事件*/
+    pointer-events: none;
+}
+.ms_fix{
+    pointer-events: auto;
+    position: sticky;
+    top: 90px;
+    margin-left: 1420px;
+}
+.ms_fix_box{
+    position: relative;
+    padding: 10px;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background:white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 19px;
+    transition: all 0.2s ease;
+}
+.ms_fix_text_red{
+    color: #e1251b;
+}
+.ms_fix_text_red :hover {
+    color: white;
+}
+.ms_fix a:hover{
+    color: white;
+    background: #c81623;
+}
+.ms_fix_triangle{
+    width: 0;
+    height: 0;
+    border-color: transparent transparent #c81623 transparent;
+    border-width: 10px;
+    border-style: solid;
+    margin: -10px auto 7px;
+    transition: all 0.2s ease;
+}
+.ms_fix a:hover .ms_fix_triangle{
+    border-color: transparent transparent white transparent;
+}
+/*滚动条*/
+.roll_box{
+    width: 1190px;
+    height: 260px;
+    margin: 0 auto 20px;
+    padding-left: 190px;
+    position: relative;
+    box-sizing: border-box;
+}
+.roll_left{
+    display: block;
+    width: 190px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../images/roll_left.png") no-repeat;
+    background-size: cover;
+}
+.roll_left_image{
+    width: 160px;
+    height: 90px;
+    margin: 15px auto 0;
+    background:url("../images/roll_left_image.png");
+}
+.roll_left_text{
+    position: relative;
+    font-size: 16px;
+    color: #eeeeee;
+    padding-top: 55px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    opacity: 0.8;
+}
+.roll_left_text_image{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../images/button.png") no-repeat 0 -16px;
+    top: 59px;
+    right: 35px;
+}
+.roll_left:hover .roll_left_text_image{
+    background-position: 0 0;
+}
+.roll_right{
+    overflow: hidden;
+    margin-left: 10px;
+    height: 100%;
+    position: relative;
+    background: white;
+}
+.roll_right_image_box{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    font-size: 0;
+}
+.roll_right_image_box>div{
+    display: inline-block;
+    width: calc(100%/5);/*198px*/
+    height: 100%;
+}
+.roll_right_image_box a{
+    display: inline-block;
+    width: 150px;
+    margin-right:50px;
+    vertical-align: top;
+}
+.roll_right_image_box div:nth-child(even) a{
+    margin-top: 20px;
+}
+.roll_right_image_box div:nth-child(odd) a{
+    margin-top: 50px;
+}
+.roll_right_image{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.roll_right_text{
+    width: 150px;
+    font-size: 14px;
+    color: #333333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    transition: color .2s ease;
+}
+.roll_right_text_top{
+    margin-bottom: 10px;
+}
+.roll_right_text_bottom{
+    margin-top: 10px;
+}
+.roll_right_image_hidden{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+.roll_right_image_box a :hover .roll_right_image_hidden{
+    opacity:.3 ;
+}
+.roll_right_image_box a:hover .roll_right_text {
+    color: #e1251b;
+}
+/*频道广场*/
+.channel_header_box{
+    width: 1190px;
+    height: 45px;
+    margin: 20px auto;
+}
+.channel_header_text{
+    position: relative;
+    width: 150px;
+    height: 45px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 45px;
+    color: #333333;
+    padding: 0 30px;
+    margin: 0 auto 0;
+}
+.channel_header_text::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    left: 0;
+    background: url("../images/diandian.png") no-repeat 0 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.channel_header_text::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    right: 0;
+    background: url("../images/diandian.png") no-repeat -25px 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.channel_box{
+    position: relative;
+    width: 1200px;
+    height: 570px;
+    padding-top: 380px;
+    font-size: 0;
+}
+.channel_box >div{
+    margin: 0 10px 10px 0;
+    display: inline-block;
+}
+.channel_on{
+    position: absolute;
+    top: 0;
+}
+.channel_under{
+    position: relative;
+}
+.channel_small{
+    width: 290px;
+    height: 180px;
+    background-color: #fff;
+}
+.channel_big{
+    width: 290px;
+    height: 370px;
+}
+.channel_big a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.channel_small>a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 17px 10px 13px 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.channel_small>a:hover span:nth-child(1){
+    color: #C81623;
+}
+.channel_small >a>span:nth-child(1){
+    font-size: 22px;
+    font-weight: 700;
+    color: #333333;
+    transition: color 0.2s ease;
+}
+.channel_small >a>span:nth-child(2){
+    margin-left: 5px;
+    font-size: 14px;
+    color: #999999;
+}
+.channel_small >div{
+    margin: 0 30px;
+    font-size: 0;
+}
+.channel_small>div>a{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.channel_small>div>a:nth-child(1){
+    margin-right: 30px;
+
+}
+.channel_small>div>a::after,.channel_big>a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity:0;
+    transition: opacity .2s ease;
+}
+.channel_small>div>a:hover::after,.channel_big>a:hover::after{
+    opacity: .3;
+}
+/*为你推荐*/
+.upload_header_box{
+    width: 1190px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background: #ffffff;
+}
+.upload_header{
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0;
+}
+.upload_header_items{
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+}
+.upload_header_items_up{
+    width: 100%;
+    height: 27px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #333333;
+    margin-top: 7px;
+    transition: color .2s ease;
+}
+.upload_header_items_under{
+    color: #999999;
+    font-size: 14px;
+    transition: color .2s ease;
+}
+.upload_header_items::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: linear-gradient(180deg,white,#eeeeee,white);
+}
+.upload_header_items:hover div{
+    color: #e1251b;
+}
+.upload_box{
+    width: 1190px;
+    margin: 0 auto;
+    height: 1000px;
+}
+.upload_bg{
+    position: relative;
+    margin: 0 -5px;
+}
+.upload_items{
+    float: left;
+    width: 230px;
+    height: 322px;
+    margin: 0 5px 10px;
+    background-color: #ffffff;
+}
+.upload_items>a{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.upload_items_image{
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.upload_items_text{
+    padding: 0 20px;
+    height: 55px;
+}
+.upload_items_text p{
+    height: 48px;
+
+    color: #666;
+    line-height: 24px;
+    font-size: 14px;
+    /*HTML文字超过两行以后 就用省略号显示代替*/
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient:vertical;
+    text-overflow: ellipsis;
+}
+.upload_items_price{
+    padding: 0 20px;
+    font-size: 0;
+}
+.upload_items_image::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+.upload_items>a:hover .upload_items_image::after{
+    opacity: .3;
+}
